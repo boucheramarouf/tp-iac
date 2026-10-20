@@ -1,0 +1,9 @@
+digraph G {
+  rankdir = "RL";
+  node [shape = rect, fontname = "sans-serif"];
+  "docker_container.web" [label="docker_container.web"];
+  "docker_image.nginx" [label="docker_image.nginx"];
+  "docker_network.tp3_net" [label="docker_network.tp3_net"];
+  "docker_container.web" -> "docker_image.nginx";
+  "docker_container.web" -> "docker_network.tp3_net";
+}
